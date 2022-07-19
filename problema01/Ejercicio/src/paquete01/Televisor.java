@@ -5,7 +5,6 @@
  */
 package paquete01;
 
-import java.util.ArrayList;
 
 /**
  *
@@ -30,29 +29,6 @@ public class Televisor {
     
     public double obtenerPrecio(){
         return precio;
-    }
-    
-    public double totalPrecioTvs(ArrayList<Televisor> t){
-        double s = 0;
-        for (int i = 0; i < t.size(); i++) {
-            s = s + t.get(i).obtenerPrecio();
-            System.out.println(s);
-        }
-        return s;
-    }
-    
-    public double televisorMasCaro(ArrayList<Televisor> t){
-        double s = 0;
-        // pass
-        return s;
-    }
-    
-    public String listaMarcasVendidas(ArrayList<Televisor> t){
-        String s = "";
-        for (int i = 0; i < t.size(); i++) {
-            s = String.format("%s%s\n", s, t.get(i).obtenerMarca());
-        }
-        return s;
     }
     
     @Override
